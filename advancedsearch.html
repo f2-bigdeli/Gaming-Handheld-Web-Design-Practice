@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="handhelds_data.js"></script>
+    <script src="advanced_search.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Gaming Handhelds</h1>
+        <nav>
+            <a href="allhandhelds.html" target="_blank">All Handhelds</a>
+            <a href="headtohead.html" target="_blank">Head to Head</a>
+            <a href="advancedsearch.html" target="_blank">Advanced Search</a>
+        </nav>
+    </header>
+
+    <!-- Advanced Search Form -->
+    <div class="advanced-search-container">
+        <h2>Advanced Search</h2>
+        <form id="advanced-search-form">
+            <!-- Range Sliders with Min and Max -->
+            <label for="lengthRange">Length (mm): <span id="lengthMinValue"></span> - <span id="lengthMaxValue"></span></label>
+            <div class="slider-container">
+                <input type="range" id="lengthRange" name="lengthRange" min="100" max="400" value="100">
+                <input type="range" id="lengthRangeMax" name="lengthRangeMax" min="100" max="400" value="400">
+            </div>
+
+            <label for="widthRange">Width (mm): <span id="widthMinValue"></span> - <span id="widthMaxValue"></span></label>
+            <div class="slider-container">
+                <input type="range" id="widthRange" name="widthRange" min="50" max="200" value="50">
+                <input type="range" id="widthRangeMax" name="widthRangeMax" min="50" max="200" value="200">
+            </div>
+
+            <label for="thicknessRange">Thickness (mm): <span id="thicknessMinValue"></span> - <span id="thicknessMaxValue"></span></label>
+            <div class="slider-container">
+                <input type="range" id="thicknessRange" name="thicknessRange" min="5" max="50" value="5">
+                <input type="range" id="thicknessRangeMax" name="thicknessRangeMax" min="5" max="50" value="50">
+            </div>
+
+            <label for="weightRange">Weight (g): <span id="weightMinValue"></span> - <span id="weightMaxValue"></span></label>
+            <div class="slider-container">
+                <input type="range" id="weightRange" name="weightRange" min="100" max="1000" value="100">
+                <input type="range" id="weightRangeMax" name="weightRangeMax" min="100" max="1000" value="1000">
+            </div>
+
+            <label for="screenSizeRange">Screen Size (inches): <span id="screenSizeMinValue"></span> - <span id="screenSizeMaxValue"></span></label>
+            <div class="slider-container">
+                <input type="range" id="screenSizeRange" name="screenSizeRange" min="3" max="10" value="3">
+                <input type="range" id="screenSizeRangeMax" name="screenSizeRangeMax" min="3" max="10" value="10">
+            </div>
+
+            <label for="batteryRange">Battery (mAh): <span id="batteryMinValue"></span> - <span id="batteryMaxValue"></span></label>
+            <div class="slider-container">
+                <input type="range" id="batteryRange" name="batteryRange" min="1000" max="10000" value="1000">
+                <input type="range" id="batteryRangeMax" name="batteryRangeMax" min="1000" max="10000" value="10000">
+            </div>
+
+            <label for="priceRange">Price ($): <span id="priceMinValue"></span> - <span id="priceMaxValue"></span></label>
+            <div class="slider-container">
+                <input type="range" id="priceRange" name="priceRange" min="50" max="1000" value="50">
+                <input type="range" id="priceRangeMax" name="priceRangeMax" min="50" max="1000" value="1000">
+            </div>
+
+            <!-- Dropdowns -->
+            <label for="brandSelect">Brand:</label>
+            <select id="brandSelect" name="brandSelect"></select>
+
+            <label for="osSelect">OS:</label>
+            <select id="osSelect" name="osSelect"></select>
+
+            <label for="screenTypeSelect">Screen Type:</label>
+            <select id="screenTypeSelect" name="screenTypeSelect"></select>
+
+            <label for="typeSelect">Type:</label>
+            <select id="typeSelect" name="typeSelect"></select>
+
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="search-results">
+            <!-- Search results will be displayed here -->
+        </div>
+    </div>
+
+</body>
+</html>

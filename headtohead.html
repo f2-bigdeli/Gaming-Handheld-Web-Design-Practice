@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head to Head Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="handhelds_data.js"></script>
+    <script src="comparison.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Head to Head Comparison</h1>
+    </header>
+
+    <!-- Comparison Form Section -->
+    <div class="comparison-container">
+        <form id="comparison-form">
+            <label for="handheld1">Choose first handheld:</label>
+            <input type="text" id="handheld1" name="handheld1" placeholder="Type model name...">
+            <div id="suggestions1" class="suggestions"></div>
+
+            <label for="handheld2">Choose second handheld:</label>
+            <input type="text" id="handheld2" name="handheld2" placeholder="Type model name...">
+            <div id="suggestions2" class="suggestions"></div>
+
+            <button type="submit">Compare</button>
+        </form>
+
+        <div id="comparison-result">
+            <!-- Comparison results will be shown here -->
+        </div>
+    </div>
+</body>
+</html>

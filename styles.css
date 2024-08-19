@@ -1,0 +1,228 @@
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    background-color: #0056b3;
+}
+
+/* Advanced Search Page Styling */
+.advanced-search-container {
+    padding: 20px;
+}
+
+.advanced-search-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+#advanced-search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#advanced-search-form label {
+    font-weight: bold;
+}
+
+#advanced-search-form input[type="range"],
+#advanced-search-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#advanced-search-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#advanced-search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for Search Results */
+#search-results ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#search-results li {
+    flex: 1 1 calc(33.333% - 20px); /* Show up to three results per line */
+    margin-bottom: 20px; /* Add more space between lines */
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Handhelds in Hot Picks Section */
+.handhelds {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px; /* Space between items */
+}
+
+.handheld {
+    position: relative;
+    width: 100%;
+}
+
+.handheld img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.handheld-name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.handheld a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.slider-container {
+    position: relative;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.slider-container input[type="range"] {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+    background: transparent;
+}
+
+.slider-container input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 20px;
+    height: 20px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.slider-container input[type="range"]::-moz-range-thumb {
+    pointer-events: all;
+    width: 20px;
+    height: 20px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.slider-container input[type="range"]::-ms-thumb {
+    pointer-events: all;
+    width: 20px;
+    height: 20px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+/* Center text in table cells */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    text-align: center; /* Center the content in each cell */
+    padding: 10px; /* Add some padding for better readability */
+}
+
+table th {
+    background-color: #f2f2f2; /* Optional: Add a background color to the header */
+}
+
+table td {
+    border-bottom: 1px solid #ddd; /* Optional: Add a border below each row for clarity */
+}
+
+/* Add spacing in the Head to Head comparison page */
+.comparison-container {
+    padding: 20px;
+}
+
+.comparison-container h2 {
+    margin-bottom: 30px; /* Increase space between the header and first line */
+}
+
+#comparison-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add more space between the form elements */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#comparison-form label,
+#comparison-form input {
+    margin-bottom: 10px; /* Add space between each line */
+}
+
+#comparison-result {
+    margin-top: 30px; /* Add space above the comparison result */
+    line-height: 1.6; /* Increase line spacing for better readability */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
